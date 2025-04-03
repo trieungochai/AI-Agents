@@ -24,3 +24,7 @@ The transformer architecture of GPTs, which is a specific architecture of LLMs, 
 ChatGPT, for example, is trained effectively on the public internet and then fine-tuned using several training strategies. The final fine-tuning training is completed using an advanced form called `reinforcement learning with human feedback (RLHF)`. This produces a model use case called chat completions.
 
 `Chat completions` LLMs are designed to improve through iteration and refinement—in other words, chatting. These models have also been benchmarked to be the best in task completion, reasoning, and planning, which makes them ideal for building agents and assistants. Completion models are trained/designed only to provide generated content on input text, so they don’t benefit from iteration.
+
+---
+### 2.1 Mastering the OpenAI API
+Numerous AI agents and assistant projects use the OpenAI API SDK to connect to an LLM. While not standard, the basic concepts describing a connection now follow the OpenAI pattern. Therefore, we must understand the core concepts of an LLM connection using the OpenAI SDK.
