@@ -3,16 +3,16 @@
 1. Go to https://openai.com and log in, or register for an account and log in. If this is your first time creating an account, you’ll likely be given free credit in some amount. If you already have an account, you must register a payment method and type. It’s generally better to purchase a number of credits at a time. This will allow you to manage the costs better and avoid overruns.
 
 2. After logging in to the platform, select ChatGPT or the API. Choose the API.
-![Selecting the API section of the OpenAI platform](A.1.png)
+![Selecting the API section of the OpenAI platform](/assets/A.1.png)
 
 3. Open the left menu, and select the API Keys option
-![select the API Keys option](A.2.png)
+![select the API Keys option](/assets/A.2.png)
 
 4. Click the Create button to create a new key, enter a name for the key, and click the Create Secret Key button
-![Create the secret API key](A.3.png)
+![Create the secret API key](/assets/A.3.png)
 
 5. Copy and paste the key to a notepad or another area for safekeeping using the Copy button. Keep this key secret, and ensure it remains only on your development machine.
-![Copying and pasting the key to a well-known safe location](A.4.png)
+![Copying and pasting the key to a well-known safe location](/assets/A.4.png)
 
 After generating a key, you can continue to use it within an `.env` configuration file or through other means of registering an OpenAI key. Other services, such as Azure OpenAI, will require the configuration of a model deployment and a base URL.
 
@@ -26,12 +26,12 @@ These guidelines will be more general because there are several ways to access A
 
 Within Azure OpenAI, models are exposed through a resource allocation called a deployment. Deployments wrap a model, such as GPT-4, and provide access to the resource.
 
-![Deploying a model through an Azure OpenAI Studio deployment](A.5.png)
+![Deploying a model through an Azure OpenAI Studio deployment](/assets/A.5.png)
 
 3.  Click the Create New Deployment button to create a new deployment, and then select the model you want to deploy. 
 4.  After the model is wrapped in a deployment, you must access the parent Azure OpenAI resource. From there, you can access the key, end point, or base URL needed to configure your connection.
 
-![Getting access to the keys and base URL used to access the service](A.6.png)
+![Getting access to the keys and base URL used to access the service](/assets/A.6.png)
 
 The three critical differences to remember when connecting to a resource such as Azure OpenAI Studio or another LLM using the OpenAI tooling are listed here:
 - The api key to access the model 
@@ -70,7 +70,7 @@ You’ll only need to install the extensions for each VS Code environment you’
 ### B.3 Creating a new Python environment with VS Code
 When developing Python projects, you often want to create isolated virtual environments. This will help in managing multiple package dependencies across various tasks and tools. In this guide, it’s recommended that a new virtual environment be created for each new chapter. VS Code can help you create and manage multiple Python environments quickly and efficiently via the following steps:
 1. Press `Ctrl-Shift-P (Cmd-Shift-P)` to open the command panel, and select `Python: Create Environment`.
-![The steps to set up the virtual environment for a chapter](B.2.png)
+![The steps to set up the virtual environment for a chapter](/assets/B.2.png)
 2. Select the environment type, either Venv or Conda. This book demonstrates Venv but Conda should also work. 
 3. Select the Python installation. The code in this book has been run with Python 3.10 at a minimum. The agent tools and frameworks featured in this book are cutting edge, so they should support later versions of Python. 
 4. Check that the `requirements.txt` file is selected. This will install all the requirements for the current source.
@@ -90,7 +90,7 @@ With Docker and VS Code configured, you can move on to using Dev Containers by f
 1. Open a new instance of VS Code.
 2. Select to open a remote window.
 
-    ![Opening a remote window to a container in VS Code](B.3.png)
+    ![Opening a remote window to a container in VS Code](/assets/B.3.png)
 
 3.  Select Open Folder in Container to start a container from a folder, or select New Dev Container to start without a folder. 
 
