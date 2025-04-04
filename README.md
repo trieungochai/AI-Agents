@@ -16,3 +16,26 @@
 
 After generating a key, you can continue to use it within an `.env` configuration file or through other means of registering an OpenAI key. Other services, such as Azure OpenAI, will require the configuration of a model deployment and a base URL.
 
+---
+### A.2 Azure OpenAI Studio, keys, and deployments
+Through its ongoing relationship with OpenAI, Microsoft hosts the same models at the same price within Azure OpenAI Studio. Occasionally, Azure may be a model version behind, but Microsoft generally keeps current with the latest OpenAI models.
+
+These guidelines will be more general because there are several ways to access Azure and methods of creating accounts and accessing the studio (for specific instructions, refer to Microsoft documentation):
+1. Log in to your Azure portal account subscription. 
+2. Create a new Azure OpenAI Studio resource in a region that makes sense to you. At the time of writing, not all regions provided access to all models. You may need to check which models are available for your region first. This will also be specific to your account and usage. 
+
+Within Azure OpenAI, models are exposed through a resource allocation called a deployment. Deployments wrap a model, such as GPT-4, and provide access to the resource.
+
+![Deploying a model through an Azure OpenAI Studio deployment](A.5.png)
+
+3.  Click the Create New Deployment button to create a new deployment, and then select the model you want to deploy. 
+4.  After the model is wrapped in a deployment, you must access the parent Azure OpenAI resource. From there, you can access the key, end point, or base URL needed to configure your connection.
+
+![Getting access to the keys and base URL used to access the service](A.6.png)
+
+The three critical differences to remember when connecting to a resource such as Azure OpenAI Studio or another LLM using the OpenAI tooling are listed here:
+- The api key to access the model 
+- The base url or endpoint where the model is located 
+- The name of the model or deployment name
+
+---
